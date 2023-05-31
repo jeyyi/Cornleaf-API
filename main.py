@@ -54,4 +54,4 @@ async def classify_image(file: UploadFile = File(...)):
         predicted_class_index = np.argmax(prediction, axis=1)[0]
         predicted_class_label = labels[predicted_class_index]
 
-        return {"predicted_class": predicted_class_label}
+        return {predicted_class_label}
